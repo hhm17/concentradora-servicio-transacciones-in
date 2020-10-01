@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mx.org.bbb.concentradora.config</groupId>
-	<artifactId>concentradora-servicio-transacciones</artifactId>
+	<artifactId>concentradora-servicio-transacciones-in</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>concentradora-servicio-transacciones</name>
+	<name>concentradora-servicio-transacciones-in</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
