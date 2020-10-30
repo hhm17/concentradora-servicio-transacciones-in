@@ -56,6 +56,9 @@ public class TransaccionIn {
 
 	@Column(name = "folio")
 	private String folio;
+	
+	@Column(name = "producto")
+	private String producto;
 
 	public TransaccionIn() {
 
@@ -63,7 +66,7 @@ public class TransaccionIn {
 
 	public TransaccionIn(Long id, String tclave, String caja, int idTurno, int idTicket, int iclave, int pclave,
 			String icb, Date fecha, int estatus, Date atmFecha, int userId, Double monto, String referencia,
-			String folio) {
+			String folio, String producto) {
 		this.id = id;
 		this.tclave = tclave;
 		this.caja = caja;
@@ -79,6 +82,7 @@ public class TransaccionIn {
 		this.monto = monto;
 		this.referencia = referencia;
 		this.folio = folio;
+		this.producto = producto;
 	}
 
 	public Long getId() {
@@ -199,5 +203,13 @@ public class TransaccionIn {
 
 	public void setReferencia(String referencia) {
 		this.referencia = referencia;
+	}
+	
+	public String getProducto() {
+		return producto;
+	}
+
+	public void setProducto(String producto) {
+		this.producto = producto;
 	}
 }
